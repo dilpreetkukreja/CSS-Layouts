@@ -1,0 +1,60 @@
+*{
+  box-sizing:border-box;
+}
+header{
+  width: 10%;
+  float:left;
+   border:1px solid black;
+}
+nav{
+
+  width:90%;
+
+  border:1px solid red;
+}
+nav li{      
+  display:inline-block;
+  padding:5px;
+  float:left;
+  
+}
+nav li a{
+  text-decoration:none;
+}
+nav ul{
+  margin-left:58%;
+}
+form{
+
+  float:right;
+border:1px solid black;
+  
+}
+.overflow{
+  overflow:auto;
+}
+main{
+  clear:both;
+  border:2px solid gray;  
+}
+article{
+  
+  width:80%;
+float:left;
+   border:2px solid yellow;  
+}
+aside{
+  padding-left: 7px;
+float:right;
+  width:20%;
+   border:2px solid pink;  
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+footer{
+  text-align: center;
+}
+

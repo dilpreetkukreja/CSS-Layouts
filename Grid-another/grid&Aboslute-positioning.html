@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrapper{
+			border:1px solid red;
+		}
+		.wrapper div{
+			border:1px solid black;
+		}
+		.wrapper{
+			display:grid;
+			grid-template-columns: repeat(4,1fr);
+			position:relative;
+			grid-template-rows:20px;
+		}
+		.box3{
+			position:absolute;
+			grid-column-start:3;
+			grid-column-end: 4;
+			grid-row-start:1;
+			grid-row-end:4;
+			top:20px;
+			left:20px;
+			
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		  <div class="box1">One</div>
+		  <div class="box2">Two</div>
+		  <div class="box3">
+		   This block is absolutely positioned. In this example the grid container is the containing block and so the absolute positioning offset values are calculated in from the outer edges of the area it has been placed into.
+		   This block is absolutely positioned. In this example the grid container is the containing block and so the absolute positioning offset values are calculated in from the outer edges of the area it has been placed into.
+		  </div>
+		  <div class="box4">Four</div>
+		  <div class="box5">Five</div>
+		  <div class="box6">Six</div>
+	</div>
+	<div> I'm below</div>
+
+</body>
+</html>

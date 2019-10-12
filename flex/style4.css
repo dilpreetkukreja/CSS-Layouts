@@ -1,0 +1,76 @@
+*{
+	box-sizing: border-box;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+
+
+	
+}
+header, nav, main, footer{
+	border:2px solid black;
+}
+.header{
+	display:flex;
+	flex:1 1 auto;
+}
+header{
+	border:2px solid blue;
+		flex:1 1 auto;
+}
+
+nav{
+	display:flex;
+	flex:6 1 auto;
+}
+nav ul{
+	display:flex;
+	flex-grow: 3;
+	flex-shrink: 1;
+
+	flex-basis:auto;
+	justify-content:space-around;
+	align-items:center;
+	border:2px solid black;
+
+}
+nav li a{
+  text-decoration:none;
+}
+nav li{
+	list-style: none;
+}
+nav form{
+	display:flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis:auto;
+	justify-content:center;
+	align-items:center;
+	border:2px solid pink;
+}
+footer{
+	display:flex;
+
+	justify-content: center;
+}
+main{
+
+	display:flex;
+	
+	flex-direction: row;
+}
+article, aside{
+	border:2px solid pink;
+	
+}
+article{
+	flex:3 1 0;
+
+	background-image: url('https://sample-videos.com/img/Sample-jpg-image-500kb.jpg');
+
+}
+aside{
+	flex:1 1 0;
+}

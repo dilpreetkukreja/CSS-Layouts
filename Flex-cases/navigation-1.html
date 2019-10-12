@@ -1,0 +1,31 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- First each item flex basis is set to their content width, then extra free space is equally added to each element. -->
+	<title>Naviation</title>
+	<style type="text/css">
+		nav ul{
+			display:flex;
+			list-style: none;
+			border:1px solid red;
+		}
+		nav li{
+			flex:auto;/* (1,1,auto) */
+			border:1px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav>
+	    <ul>
+	        <li><a href="#">Page 1</a></li>
+	        <li><a href="#">Page 2</a></li>
+	        <li><a href="#">Page 3 is longer text, hello there,takes more width than others</a></li>
+	        <li><a href="#">Page 4</a></li>
+	    </ul>
+	</nav>
+      
+</body>
+</html>

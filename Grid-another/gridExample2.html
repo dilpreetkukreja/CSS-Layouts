@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.wrapper{
+			border:1px solid red;
+		}
+		.wrapper>div{
+			border:1px solid black;
+		}
+		.wrapper{
+			display:grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 50px;/*Explicit rows --  first row is explicitly defined as 50px*/
+			grid-auto-rows: 100px 200px;/* Implicits rows-- implicit rows are defined as 100px and 200px and this pattern will be repeated, 
+			it will add rows of height 100px and 200px and this pattern is repeated */
+			grid-gap: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>One</div>
+	    <div>Two</div>
+	    <div>Three</div>
+	    <div>Four</div>
+	    <div>Five</div>
+	    <div>Six</div>
+	    <div>Seven</div>
+	    <div>Eight</div>
+	    <div>Ten</div>
+	    <div>Eleven</div>
+	    <div>Twelve</div>
+	    <div>Thirteen</div>
+	</div>
+	<script type="text/javascript">
+		
+		
+	</script>
+
+</body>
+</html>

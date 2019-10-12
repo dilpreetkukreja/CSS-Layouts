@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+		.wrapper{
+			border:1px solid red;
+		}
+		.wrapper>div{
+			border:1px solid black;
+		}
+		.wrapper{
+			display:grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 100px);/*only two rows are created explicity*/
+			grid-gap: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <div>One</div>
+	    <div>Two</div>
+	    <div>Three</div>
+	    <div>Four</div>
+	    <div>Five</div>
+	    <div>Six</div>
+	    <!--- seven eight nine are added on implicit rows creted automatically--->
+	    <div>Seven</div>
+	    <div>Eight</div>
+	    <div>Nine</div>
+	</div>
+	<script type="text/javascript">
+		
+		
+	</script>
+
+</body>
+</html>
